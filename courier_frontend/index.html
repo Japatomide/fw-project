@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracking App Dashboard</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <aside class="aside">
+      <div class="dashboard_img">
+        <img src="img/tracking_logo.jpeg" alt="This is the Dashboard logo" />
+        <p>Dashboard</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="" class="nav-item" data-target="form1">Add</a></li>
+          <li><a href="" class="nav-item" data-target="form2">Find</a></li>
+          <li><a href="" class="nav-item" data-target="form3">Update</a></li>
+          <li><a href="" class="nav-item" data-target="form4">Delete</a></li>
+          <li><a href="./client/index.html" >Display page</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <header class="header">
+      <h1>Tracking Application</h1>
+    </header>
+    <section class="section">
+      <div class="form_top">
+        <form action="" id="form1" class="dashboard-section">
+          <p class="add_para">Add your Items</p>
+          <div class="form_left">
+            <label for="name_inp">Name</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Name"
+              class="add_inp"
+              id="name_inp"
+            />
+            <br />
+            <b class="add_error1"></b>
+            <br />
+            <label for="origin_inp">Origin</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Origin"
+              class="add_inp"
+              id="origin_inp"
+            />
+            <br />
+            <b class="add_error2"></b>
+            <br />
+            <label for="destination_inp">Destination</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Destination"
+              class="add_inp"
+              id="destination_inp"
+            />
+            <br />
+            <b class="add_error3"></b>
+            <br />
+            <label for="weight_inp">Weight</label>
+            <br />
+            <input
+              type="number"
+              placeholder="Weight"
+              class="add_inp"
+              id="weight_inp"
+            />
+            <br />
+            <b class="add_error4"></b>
+            <br />
+          </div>
+          <div class="form_right">
+            <label for="shipment_fee_inp">Shipment fee</label>
+            <br />
+            <input
+              type="number"
+              placeholder="Shipment fee"
+              class="add_inp"
+              id="shipment_fee_inp"
+            />
+            <br />
+            <b class="add_error5"></b>
+            <br />
+            <label for="arrival_date_inp">Arrival date</label>
+            <br />
+            <input
+              type="date"
+              placeholder="Arrival date"
+              class="add_inp"
+              id="arrival_date_inp"
+            />
+            <br />
+            <b class="add_error6"></b>
+            <br />
+            <label for="arrival_time_inp">Arrival time</label>
+            <br />
+            <input
+              type="month"
+              placeholder="Arrival time"
+              class="add_inp"
+              id="arrival_time_inp"
+            />
+            <br />
+            <div class="add_error7"></div>
+            <br />
+          </div>
+          <button id="add_btn" class="add_btn">Add</button>
+        </form>
+      </div>
+      <form action="" id="form2" class="dashboard-section">
+        <input
+          type="text"
+          placeholder="Find your Item"
+          id="find_inp"
+          class="find_inp"
+        />
+        <div class="find_error"></div>
+        <button type="submit" id="find_btn" class="find_btn">Find</button>
+      </form>
+
+      <form action="" id="form3" class="dashboard-section">
+        <input
+          type="text"
+          placeholder="Update your Item"
+          id="update_inp"
+          class="update_inp"
+        />
+        <div class="update_error"></div>
+        <button type="submit" id="update_btn" class="update_btn">Update</button>
+      </form>
+
+      <form action="" id="form4" class="dashboard-section">
+        <input
+          type="text"
+          placeholder="Delete your Item"
+          id="delete_inp"
+          class="delete_inp"
+        />
+        <div class="delete_error"></div>
+        <button type="submit" id="delete_btn" class="delete_btn">Delete</button>
+      </form>
+    </section>
+    <footer class="footer"></footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

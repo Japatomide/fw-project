@@ -1,0 +1,19 @@
+#shipments_wrapper {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  background-color: purple;
+}
+
+#shipments_list {
+    background-color: black;
+    color: white;
+    width: 60%;
+    margin: auto;
+}
+
+#shipment_list_table{
+    width: 70%;
+    margin: auto;
+    border: 2px white solid;
+}
