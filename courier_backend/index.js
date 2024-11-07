@@ -1,13 +1,13 @@
 const express = require("express");
 const uuid = require("uuid").v4;
 const cors = require("cors");
-const morgan = require('morgan')
+const morgan = require("morgan");
 const PORT = 3001;
 
 const app = express();
 
 app.use(express.json());
-app.use(morgan('dev'))
+app.use(morgan("dev"));
 
 app.use(
   cors({
@@ -17,13 +17,27 @@ app.use(
   })
 );
 
-let db = {
-  consignment: {},
-};
+let db = [];
 
 app.get("/consignment", (req, res) => {
-  return res.status(200).send(db["consignment"]);
+  return res.status(200).send(db);
 });
+
+app.get("/consignment/:id", (req, res) => {
+let consignment = db["consignment"][req.params.id];
+
+if (!req.params.id) {
+  return res.json({ message: "Please provide an id" });
+}
+
+// Object.keys(req.body).forEach((field) => {
+//   consignment[field] = req.body[field];
+// });
+
+
+return res.status(200).json({ message: consignment });
+
+})
 
 app.post("/consignment", (req, res) => {
   let consignment = req.body;
@@ -39,13 +53,13 @@ app.post("/consignment", (req, res) => {
         error: `This field: ${field} cannot be empty, problem creating consignment!`,
       });
     }
-  });
+  });  
 
   let consignmentId = uuid();
-  db["consignment"][consignmentId] = consignment;
+  db.push({ ...consignment, consignmentId });
 
   return res.status(201).json({
-    data: consignment
+    data: db
   });
 });
 
