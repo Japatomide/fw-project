@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Courier</title>
-    <link rel="stylesheet" href="./product_display.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="product_display.css">
+
+    <title>Consignments</title>
   </head>
   <body>
-    <div id="shipments_wrapper">
-      <div id="shipments_list">
-        <table id="shipment_list_table">
-          <thead>
-            <th>S/N</th>
-            <th>Product ID</th>
-            <th>Name</th>
-            <th>Origin</th>
-            <th>Destination</th>
-            <th>Weight</th>
-            <th>Shipment Fee</th>
-            <th>Arrival Date</th>
-          </thead>
-          <tbody></tbody>
-        </table>
+    <div class="content">
+      <div class="container">
+        <h2 class="mb-5">Consignments</h2>
+
+        <div class="table-responsive">
+          <table
+            class="table table-striped custom-table"
+            id="shipment_list_table"
+          >
+            <thead>
+              <tr>
+                <th scope="col">S/N</th>
+                <th scope="col">Product ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Origin</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Shipment Fee</th>
+                <th scope="col">Arrival Date</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
     </div>
 
     <a href="../index.html"><input id="btn-dashboard" type="button" value="Back To Dashboard"></a>
 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

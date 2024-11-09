@@ -1,29 +1,3 @@
-#shipments_wrapper {
-  width: 95%;
-  margin: auto;
-  padding: 10px;
-  background-color: #1c1f23;
-}
-
-#shipments_list {
-  background-color: black;
-  color: white;
-  width: 80%;
-  margin: auto;
-}
-
-#shipment_list_table,
-th,
-tr,
-td {
-  text-align: center;
-  width: 70%;
-  margin: auto;
-  padding: 1rem;
-  border: 2px white solid;
-  border-collapse: collapse;
-}
-
 #btn-dashboard {
   width: 80%;
   margin-inline: 8rem;
