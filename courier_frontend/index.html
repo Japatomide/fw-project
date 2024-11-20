@@ -17,185 +17,178 @@
 
     <!-- Sidebar section -->
     <section class="sidebar">
-      <ul>
-        <li><a href="#" class="sidebar-item" data-target="form-add">Add</a></li>
-        <li>
-          <a href="#" class="sidebar-item" data-target="form-find">Find</a>
-        </li>
-        <li>
-          <a href="#" class="sidebar-item" data-target="form-update">Update</a>
-        </li>
-        <li>
-          <a href="#" class="sidebar-item" data-target="form-delete">Delete</a>
-        </li>
-      </ul>
+      <div id="sidebar-item-container">
+        <div>
+          <img class="sidebar-icon" src="./img/svg/plus-solid.svg" alt="" />
+          <h4 class="sidebar-text">
+            <a href="#" class="sidebar-item" data-target="form-add">Add</a>
+          </h4>
+        </div>
+        <div>
+          <img class="sidebar-icon" src="./img/svg/magnifying-glass-solid.svg" alt="" />
+          <h4 class="sidebar-text">
+            <a href="#" class="sidebar-item" data-target="form-find">Find</a>
+          </h4>
+        </div>
+        <div>
+          <img class="sidebar-icon" src="./img/svg/pen-to-square-solid.svg" alt="" />
+          <h4 class="sidebar-text">
+            <a href="#" class="sidebar-item" data-target="form-update">Update</a>
+          </h4>
+        </div>
+        <div>
+          <img class="sidebar-icon" src="./img/svg/trash-can-solid.svg" alt="" />
+          <h4 class="sidebar-text">
+            <a href="#" class="sidebar-item" data-target="form-delete">Delete</a>
+          </h4>
+        </div>
+      </div>
     </section>
     <!-- ####################################### -->
 
     <main class="main">
       <!-- ADD FORM -->
       <div>
-          <form id="form-add" class="form-container dashboard-section">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">Name</label>
-                <input type="text" id="name-input" name="name" />
-                <b class="error-message1"></b >
-              </div>
-              <div class="form-group">
-                <label for="origin">Origin</label>
-                <input type="text" id="origin" name="origin" />
-                <div class="error-message2"></div>
-              </div>
+        <form id="form-add" class="form-container dashboard-section">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Name</label>
+              <input type="text" id="name-input" name="name" />
+              <b class="error-message1"></b>
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Destination</label>
-                <input
-                  type="text"
-                  id="destination"
-                  name="destination"
-                
-                />
-                <div class="error-message3"></div>
-              </div>
-              <div class="form-group">
-                <label for="weight">Weight</label>
-                <input type="text" id="weight" name="weight" />
-                <div class="error-message4"></div>
-              </div>
+            <div class="form-group">
+              <label for="origin">Origin</label>
+              <input type="text" id="origin" name="origin" />
+              <div class="error-message2"></div>
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="shipment_fee">Shipment fee</label>
-                <input
-                  type="text"
-                  id="shipment_fee"
-                  name="shipment_fee"
-                />
-                <div class="error-message5"></div>
-              </div>
-              <div class="form-group">
-                <label for="arrival_date">Arrival date</label>
-                <input type="text" id="arrival_date" name="arrival_date" />
-                <div class="error-message6"></div> 
-              </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Destination</label>
+              <input type="text" id="destination" name="destination" />
+              <div class="error-message3"></div>
             </div>
+            <div class="form-group">
+              <label for="weight">Weight</label>
+              <input type="text" id="weight" name="weight" />
+              <div class="error-message4"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="shipment_fee">Shipment fee</label>
+              <input type="text" id="shipment_fee" name="shipment_fee" />
+              <div class="error-message5"></div>
+            </div>
+            <div class="form-group">
+              <label for="arrival_date">Arrival date</label>
+              <input type="text" id="arrival_date" name="arrival_date" />
+              <div class="error-message6"></div>
+            </div>
+          </div>
 
-            <button type="submit" class="form-btn">Add Shipment</button>
-          </form>
-
+          <button type="submit" class="form-btn">Add Shipment</button>
+        </form>
       </div>
       <!-- FIND FORM -->
       <div>
-          <form id="form-find" class="form-container dashboard-section">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="origin">Consignment ID</label>
-                <input type="text" id="origin" name="origin" required />
-              </div>
+        <form id="form-find" class="form-container dashboard-section">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="origin">Consignment ID</label>
+              <input type="text" id="origin" name="origin" required />
             </div>
+          </div>
 
-            <button type="submit" class="form-btn">Find Shipment</button>
-          </form>
+          <button type="submit" class="form-btn">Find Shipment</button>
+        </form>
       </div>
       <!-- UPDATE FORM -->
       <div>
-          <form id="form-update" class="form-container dashboard-section">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">Name</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="form-group">
-                <label for="origin">Origin</label>
-                <input type="text" id="origin" name="origin" required />
-              </div>
+        <form id="form-update" class="form-container dashboard-section">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Name</label>
+              <input type="text" id="name" name="name" required />
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Destination</label>
-                <input
-                  type="text"
-                  id="destination"
-                  name="destination"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="weight">Weight</label>
-                <input type="text" id="weight" name="weight" />
-              </div>
+            <div class="form-group">
+              <label for="origin">Origin</label>
+              <input type="text" id="origin" name="origin" required />
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="shipment_fee">Shipment fee</label>
-                <input
-                  type="text"
-                  id="shipment_fee"
-                  name="shipment_fee"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="arrival_date">Arrival date</label>
-                <input type="text" id="arrival_date" name="arrival_date" />
-              </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Destination</label>
+              <input type="text" id="destination" name="destination" required />
             </div>
+            <div class="form-group">
+              <label for="weight">Weight</label>
+              <input type="text" id="weight" name="weight" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="shipment_fee">Shipment fee</label>
+              <input
+                type="text"
+                id="shipment_fee"
+                name="shipment_fee"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="arrival_date">Arrival date</label>
+              <input type="text" id="arrival_date" name="arrival_date" />
+            </div>
+          </div>
 
-            <button type="submit" class="form-btn">Update Shipment</button>
-          </form>
+          <button type="submit" class="form-btn">Update Shipment</button>
+        </form>
       </div>
       <!-- DELETE FORM -->
       <div>
-          <form id="form-delete" class="form-container dashboard-section">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">Name</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="form-group">
-                <label for="origin">Origin</label>
-                <input type="text" id="origin" name="origin" required />
-              </div>
+        <form id="form-delete" class="form-container dashboard-section">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Name</label>
+              <input type="text" id="name" name="name" required />
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Destination</label>
-                <input
-                  type="text"
-                  id="destination"
-                  name="destination"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="weight">Weight</label>
-                <input type="text" id="weight" name="weight" />
-              </div>
+            <div class="form-group">
+              <label for="origin">Origin</label>
+              <input type="text" id="origin" name="origin" required />
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="shipment_fee">Shipment fee</label>
-                <input
-                  type="text"
-                  id="shipment_fee"
-                  name="shipment_fee"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="arrival_date">Arrival date</label>
-                <input type="text" id="arrival_date" name="arrival_date" />
-              </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Destination</label>
+              <input type="text" id="destination" name="destination" required />
             </div>
+            <div class="form-group">
+              <label for="weight">Weight</label>
+              <input type="text" id="weight" name="weight" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="shipment_fee">Shipment fee</label>
+              <input
+                type="text"
+                id="shipment_fee"
+                name="shipment_fee"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="arrival_date">Arrival date</label>
+              <input type="text" id="arrival_date" name="arrival_date" />
+            </div>
+          </div>
 
-            <button type="submit" class="form-btn">Delete Shipment</button>
-          </form>
+          <button type="submit" class="form-btn">Delete Shipment</button>
+        </form>
       </div>
-
     </main>
     <!-- Script file -->
-     <script src="main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
